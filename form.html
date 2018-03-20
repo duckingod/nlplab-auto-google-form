@@ -6,7 +6,7 @@
     // name = encodeURI(name)
     return "https://docs.google.com/forms/d/e/1FAIpQLSfPsdjPZDU_WgZLz7P1I4Q9qUVLUWUj-zCPm4VZ9dPUl622sg/viewform?usp=pp_url&entry.431514055="+name+"&entry.358482236="+date+"&entry.1243442841&entry.147740849=Yes&entry.1112927512&entry.371686192&entry.2044438957&entry.1965948342&entry.7651585=Daily&entry.1168856062=Neutral&entry.221105931&entry.84528592&entry.1973084554"
   }
-  var name = window.location.search.substr(1)
+  var name = window.location.hash.substr(1)
 
   window.location.replace(path(name))
   // console.log(path(name))
